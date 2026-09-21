@@ -27,9 +27,10 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-        week03Variables()
-        week03Functions()
-        week04Classes()
+        //week03Variables()
+        //week03Functions()
+        //week04Classes()
+        week04Collections()
     }
 }
 private fun week03Variables() {
@@ -63,6 +64,27 @@ private fun week03Variables() {
     println("Nickname: $nickname ${nickname?.length}")
 }
 
+private fun week04Collections(){
+    println("========= Kotlin Collections =========")
+
+    val fruits = listOf("apple", "banana", "orange")
+    val mutableFruits = mutableListOf("kiwi", "watermelon")
+
+    //fruits.add("kiwi")
+    println("Fruits : $fruits")
+    mutableFruits.add("banana")
+    println("Mutable fruits : $mutableFruits")
+
+    //val scores = mapOf("Kim" to 100, "Park" to 97, "Lee" to 99)
+    //println("Scores : $scores")
+
+    //for(fruit in mutableFruits){
+    //    println("I like $fruit")
+    //}
+
+    //scores.forEach{(name, score) -> println("$name scored $score")}
+    //fruits.forEach { fruit -> println("$fruit") }
+}
 private fun week04Classes() {
     println("========= Kotlin Classes =========")
 
