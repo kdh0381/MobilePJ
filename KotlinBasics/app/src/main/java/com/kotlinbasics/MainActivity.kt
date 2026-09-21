@@ -29,8 +29,21 @@ class MainActivity : ComponentActivity() {
         }
         //week03Variables()
         //week03Functions()
-        week04Classes()
+        //week04Classes()
+        week04Collections()
     }
+}
+
+private fun week04Collections() {
+    println("========= Kotlin Collections =========")
+
+    val fruits = listOf("apple", "banana", "orange")
+    val mutableFruits = mutableListOf("kiwi", "watermelon")
+
+//    fruits.add("kiwi")  // immutable
+    mutableFruits.add("banana")
+    println("Fruits: $fruits")
+    println("Mutable Fruits: $mutableFruits")
 }
 
 private fun week04Classes() {
