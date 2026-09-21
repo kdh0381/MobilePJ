@@ -75,15 +75,15 @@ private fun week04Collections(){
     mutableFruits.add("banana")
     println("Mutable fruits : $mutableFruits")
 
-    //val scores = mapOf("Kim" to 100, "Park" to 97, "Lee" to 99)
-    //println("Scores : $scores")
+    val scores = mapOf("Kim" to 100, "Park" to 96, "Lee" to 97)
+    println("Scores : $scores")
 
-    //for(fruit in mutableFruits){
-    //    println("I like $fruit")
-    //}
+    for(fruit in mutableFruits){
+        println("I like $fruit")
+    }
 
-    //scores.forEach{(name, score) -> println("$name scored $score")}
-    //fruits.forEach { fruit -> println("$fruit") }
+    scores.forEach{(name, score) -> println("$name scored $score")}
+    fruits.forEach { fruit -> println("$fruit") }
 }
 private fun week04Classes() {
     println("========= Kotlin Classes =========")
