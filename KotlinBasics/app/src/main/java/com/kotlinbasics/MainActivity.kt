@@ -44,6 +44,16 @@ private fun week04Collections() {
     mutableFruits.add("banana")
     println("Fruits: $fruits")
     println("Mutable Fruits: $mutableFruits")
+
+    val scores = mapOf("Kim" to 100, "Park" to 96, "Lee" to 97)
+    println("Scores: $scores")
+
+    for(fruit in mutableFruits){
+        println("I like $fruit")
+    }
+
+    scores.forEach{(name, score) -> println("$name scored $score")}
+    fruits.forEach { fruit -> println("$fruit") }
 }
 
 private fun week04Classes() {
