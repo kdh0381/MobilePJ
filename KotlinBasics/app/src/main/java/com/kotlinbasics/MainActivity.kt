@@ -70,18 +70,20 @@ private fun week03Functions(){
 
     println("========= Kotlin Functions =========")
 
-    fun printAll(vip:Boolean, name: String) {
+    fun printAll(vip: Boolean, name: String){
         println("$vip, $name")
     }
 
-    fun printMany(vararg msg: String) {
+    //fun printMany(msg: String){
+    fun printMany(vararg msg: String){  // variable arguments
         for(m in msg) println(m)
     }
 
-    printAll(vip=true, name="dy")
-    printAll(name = "mirae", vip = true)
+    //printAll("dy", true)
+    printAll(true, "dy")
+    printAll(name = "mirae", vip = true)  // named arguments
 
-    printMany("A")
+    printMany("A", "B", "C", "D")
 }
 
 @Composable
