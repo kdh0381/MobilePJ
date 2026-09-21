@@ -29,6 +29,7 @@ class MainActivity : ComponentActivity() {
         }
         week03Variables()
         week03Functions()
+        week04Classes()
     }
 }
 private fun week03Variables() {
@@ -60,6 +61,31 @@ private fun week03Variables() {
     var nickname:String? = null
     nickname = "mirae"
     println("Nickname: $nickname ${nickname?.length}")
+}
+
+private fun week04Classes() {
+    println("========= Kotlin Classes =========")
+
+    class Student {
+        var name: String = ""
+        var age: Int = 0
+
+        fun introduce() {
+            println("HI, I'm $name and I'm $age years old")
+        }
+    }
+    val student1 = Student()
+    student1.name = "Mirae"
+    student1.age = 21
+    student1.introduce()
+
+    data class Person(val name: String, val age: Int)
+
+    val person1 = Person(name = "Kim", age = 23)
+    val person2 = Person(name = "Park", age = 21)
+
+    println("Person1 : $person1")
+    println("Person2 : $person2")
 }
 private fun week03Functions(){
 //    println("Week 03: Functions")
